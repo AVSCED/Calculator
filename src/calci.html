@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css" />
+  </head>
+  <body class="desigen">
+    <form name="calcform" action="">
+      <input
+        name="txt1"
+        id="myIput"
+        type="Text"
+        size="60"
+        value="0"
+        class="start"
+        readonly
+      />
+      <table>
+        <tr>
+          <td>
+            <input
+              id="btn7"
+              class="button"
+              type="Button"
+              value="  7  "
+              onclick="NumPressed(7)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn8"
+              class="button"
+              type="Button"
+              value="  8  "
+              onclick="NumPressed(8)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn9"
+              class="button"
+              type="Button"
+              value="  9  "
+              onclick="NumPressed(9)"
+            />
+          </td>
+          <td>
+            <input
+              id="btnC"
+              class="button button1"
+              type="Button"
+              value="  Reset "
+              onclick="Clear()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="btn4"
+              class="button button1"
+              type="Button"
+              value="  4"
+              onclick="NumPressed(4)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn5"
+              class="button button1"
+              type="Button"
+              value="  5   "
+              onclick="NumPressed(5)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn6"
+              class="button"
+              type="Button"
+              value="  6  "
+              onclick="NumPressed(6)"
+            />
+          </td>
+          <td>
+            <input
+              id="btnplusminus"
+              class="button button1"
+              type="Button"
+              value=" +/- "
+              onclick="Neg()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="btn1"
+              class="button"
+              type="Button"
+              value="  1  "
+              onclick="NumPressed(1)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn2"
+              class="button button1"
+              type="Button"
+              value="  2  "
+              onclick="NumPressed(2)"
+            />
+          </td>
+          <td>
+            <input
+              id="btn3"
+              class="button"
+              type="Button"
+              value="  3  "
+              onclick="NumPressed(3)"
+            />
+          </td>
+          <td>
+            <input
+              id="btndecimal"
+              class="button"
+              type="Button"
+              value="   .  "
+              onclick="Decimal()"
+            />
+          </td>
+        </tr>
+      </table>
+      <tr>
+        <td>
+          <input
+            id="btnplus"
+            class="button button3"
+            type="Button"
+            value="  +  "
+            onclick="Operation('+')"
+          />
+        </td>
+        <td>
+          <input
+            id="btnmultiply"
+            class="button button1"
+            type="Button"
+            value="  *  "
+            onclick="Operation('*')"
+          />
+        </td>
+
+        <td>
+          <input
+            id="btnminus"
+            class="button button3"
+            type="Button"
+            value="   -   "
+            onclick="Operation('-')"
+          />
+        </td>
+
+        <input
+          id="btndivide"
+          class="button button1"
+          type="Button"
+          value="   /   "
+          onclick="Operation('/')"
+        />
+      </tr>
+      <input
+        id="btn0"
+        class="button button4"
+        type="Button "
+        value="  0  "
+        onclick="NumPressed(0)"
+      />
+
+      <input
+        id="btnequals"
+        class="button button2"
+        type="Button"
+        value="  =  "
+        onclick="Operation('=')"
+      />
+    </form>
+  </body>
+  <script src="./calci.js"></script>
+</html>
